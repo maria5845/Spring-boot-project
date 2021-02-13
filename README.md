@@ -1,2 +1,2 @@
-# Spring-boot-project
+# 블로그 하나 간단하게 만들어보기 (Spring boot)
 프로젝트 시작일 : 2021.02.13
