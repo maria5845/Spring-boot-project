@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-// 사용자가 요청 -> 응답(HTML 파일)
+// 사용자가 요청 -> 응답(HTML 파일이 있는경우)
 //@Controller
 //사용자가 요청 -> 응답(Data)
 @RestController
