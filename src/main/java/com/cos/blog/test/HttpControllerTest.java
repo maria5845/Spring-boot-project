@@ -26,7 +26,7 @@ public class HttpControllerTest {
 	// http://localhost:8080 /http/post(insert)
 	@PostMapping("/http/post") // text /plain , application/json
 	public String postTest(@RequestBody Member m) { // MessageConverter(스프링 부트)
-		// JSON 타입으로 보내면 파라미터를 해당 Member 오브젝트 에 자동적으로 매핑해 주는데 이것을 메시지 컨버터가 자동적으로 파싱해서  넣어줌
+		// JSON 타입으로 보내면 파라미터를 해당 Member 오브젝트 에 자동적으로 매핑해 주는데 이것을 메시지 컨버터가 자동적으로 매핑해서  넣어줌
 		return "post 요청 : " + m.getId() + ", " + m.getUsername() + ", " + m.getPassword() + ", " + m.getEmail();
 	}
 
@@ -34,7 +34,7 @@ public class HttpControllerTest {
 	@PutMapping("/http/put")
 	public String putTest(@RequestBody Member m) {
 		// body에 데이터를 담아서 보내면 오브젝트로 받아서 매핑해주는데 RequestBody라는 어노테이션을 통해서 오브젝트로 매핑해서 받을 수  있음
-		return "put요청 : " + m.getId() + ", " + m.getUsername() + ", " + m.getPassword() + ", " + m.getEmail();
+		return "put 요청 : " + m.getId() + ", " + m.getUsername() + ", " + m.getPassword() + ", " + m.getEmail();
 	}
 
 	// http://localhost:8080 /http/delete(delete)
