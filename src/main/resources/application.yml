@@ -1,3 +1,5 @@
+
+#스프링부트 yml을 통한 JDBC 연결 
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver

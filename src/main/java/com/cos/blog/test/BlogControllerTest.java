@@ -8,7 +8,7 @@ public class BlogControllerTest {
 
 	@GetMapping("/test/hello")
 	public String hello() {
-		return "<h1>Thank you 4dollors </h1>";
+		return "<h1>Thank you 4 dollors </h1>";
 	}
 
 }
