@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-// 사용자가 요청 -> 응답(HTML 파일) 
+// 2021.02.14 
+//사용자가 요청 -> 응답(HTML 파일) 
 //@Controller
 
 //사용자가 요청 -> 응답(Data)
@@ -34,7 +35,7 @@ public class HttpControllerTest {
 	@PutMapping("/http/put")
 	public String putTest(@RequestBody Member m) {
 		// body에 데이터를 담아서 보내면 오브젝트로 받아서 매핑해주는데 RequestBody라는 어노테이션을 통해서 오브젝트로 매핑해서 받을 수  있음
-		return "put 요청 : " + m.getId() + ", " + m.getUsername() + ", " + m.getPassword() + ", " + m.getEmail();
+		return "put요청 : " + m.getId() + ", " + m.getUsername() + ", " + m.getPassword() + ", " + m.getEmail();
 	}
 
 	// http://localhost:8080 /http/delete(delete)
